@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We create solutions for all sectors · Cyber security · Public facing-Digital Services · High Priority Systems · Cross-Government Collaboration and Scalable Services">
+    <meta name="author" content="Eduardo-Fajardo-Marcial" >
+    <meta name="Robots" content="all" />
+    <meta name="keywords" content="software consulting,computer network services,computer security services,it staffing,software design,cloud-base services,computer password retrieval,remote access computer support,managed it services,computer support and service,computer security,business software, interprise software,business computer services, business computer support, wifi for business,business wifi optimize,business computer services,computer services,computer support and services,it help desk, help desk, computer support, IT help desk, wifi, network service, managed services, IT Services, it services, help desk, computer help, computer security, Computer Help, virus, computer virus, network sercurity, network firwall, network upgrade, wifi cloud security, cloud security, IT call center, 24/7 IT Help, 24/7 computer help, 24/7 IT Service, ">
+
+    <!--Bulma CSS framework cdn link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!--Local main.css file -->
+    <link rel="stylesheet" href={% static "app/css/main.css" %}>
+    <title>{% block title %}Home Page{% endblock title %}</title>
+</head>
+<body>
+    {%  block content %}
+    {% endblock content %}
+</body>
+</html>
