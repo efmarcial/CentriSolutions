@@ -1,0 +1,8 @@
+django
+django-on-heroku
+gunicorn
+psycopg2-binary
+whitenoise
+psycopg2
+pillow
+ipython
