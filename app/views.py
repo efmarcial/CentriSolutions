@@ -37,7 +37,7 @@ def login_page(request):
             "message": message
         }
 
-    return render(request, 'app/login.html', content)
+    return render(request, 'app/Login.html', content)
 
 
 def register_page(request):
