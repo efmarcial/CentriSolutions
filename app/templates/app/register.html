@@ -1,0 +1,51 @@
+{% extends 'app/base.html' %}
+{% block title %}Registion{% endblock %}
+{% block content %}
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <h3>Register</h3>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <form class="box" method="post">{% csrf_token %}
+                                <div class="field">
+                                    <label class="label">Username</label>
+                                    <div class="control">
+                                        <input name="{ UserForm.username }" class="input" type="text" placeholder="e.g. JohnDoe">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control">
+                                        <input name="{ UserForm.email }" class="input" type="email" placeholder="e.g. alex@example.com">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Password</label>
+                                    <div class="control">
+                                        <input class="input" name="{ UserForm.password }" type="password" placeholder="********">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">First Name</label>
+                                    <div class="control">
+                                        <input class="input" name="{ UserForm.first_name }" type="text" placeholder="John">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Last Name</label>
+                                    <div class="control">
+                                        <input class="input" name="{ UserForm.last_name }" type="text" placeholder="John">
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

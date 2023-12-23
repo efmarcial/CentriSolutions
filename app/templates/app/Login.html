@@ -1,0 +1,39 @@
+{%  extends 'app/base.html' %}
+{% block title  %}Login{% endblock %}
+{% block content %}
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <!--Container will center objects horizontally -->
+            <div class="container">
+                <!--Columns is the row with a vertically centered column with one column-->
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <!--Box to put the form for the login-->
+                        <form class="box" method="post">{%  csrf_token %}
+                            <!--Username/email and password fields-->
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input name="username" class="input" type="text" placeholder="e.g. JohnDoe"/>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Password</label>
+                                <div class="control">
+                                    <input name="password" class="input" type="password" placeholder="********"/>
+                                </div>
+                            </div>
+
+                            <button class="button is-primary">Sign in</button>
+                            <br>
+                            <a href="{% url 'register' %}">Register</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        alert('{{ message }}')
+    </script>
+{% endblock %}
